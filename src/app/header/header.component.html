@@ -1,0 +1,24 @@
+<div class="header">
+  <img (click)="goHome()" class="logo" src="../../assets/logo.png" alt="" />
+  <div class="nav_container">
+    <nav>
+      <a (click)="goHome()" href="#">Home</a>
+      <a (click)="goHome()" href="#">About Us</a>
+      <a (click)="goHome()" href="#">Services</a>
+      <a id="our_teams" (click)="goHome()" href="#">Our Teams</a>
+    </nav>
+    <a (click)="goHome()" class="Contact_as">Contact Us</a>
+  </div>
+  <img (click)="toggleDrawer()" class="burger" src="../../assets/menu.png" alt="burger" />
+</div>
+<div class="drawer" *ngIf="isDrawerOpen" class="drawer">
+  <div class="nav_drawer_container">
+    <nav class="drawer_nav">
+      <a (click)="closeDrawer()" href="#">Home</a>
+      <a (click)="closeDrawer()" href="#">About Us</a>
+      <a (click)="closeDrawer()" href="#">Services</a>
+      <a (click)="closeDrawer()" href="#">Our Teams</a>
+    </nav>
+    <a (click)="closeDrawer()" class="Contact_as_nav">Contact Us</a>
+</div>
+

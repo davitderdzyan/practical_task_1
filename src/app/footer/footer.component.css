@@ -1,0 +1,151 @@
+.footer {
+  margin: 110px 0 40px 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.about_comp p {
+  width: 480px;
+  margin-top: 24px;
+  color: var(--grayscale-50, #333);
+  font-family: Poppins;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 170%;
+}
+
+.label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.circle {
+  width: 14px;
+  height: 14px;
+  border-radius: 100px;
+  background-color: var(--grayscale-50, #333);
+}
+
+.label p {
+  color: var(--grayscale-50, #333);
+  font-family: Poppins;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%;
+}
+
+.input {
+  width: 440px;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+}
+
+.arrow {
+  margin-top: 16px;
+  cursor: pointer;
+}
+
+.input input {
+  width: 440px;
+  padding-bottom: 15px;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #141414;
+}
+
+.input input::placeholder {
+  color: var(--grayscale-lightray, #d9d9d9);
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%;
+}
+
+.follow {
+  width: 195px;
+  margin-top: 40px;
+  margin-left: auto;
+}
+
+.follow p {
+  color: var(--grayscale-50, #333);
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%;
+}
+
+.contact_icons {
+  margin-top: 11px;
+  display: flex;
+  gap: 25px;
+}
+
+@media (max-width: 1000px) {
+  .footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about_comp {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about_comp p {
+    width: 80%;
+    margin-top: 10px;
+    font-size: 36px;
+    text-align: center;
+  }
+
+  .contacts {
+    margin-top: 40px;
+  }
+
+  .follow {
+    width: 195px;
+    margin-top: 40px;
+    margin: auto;
+    text-align: center;
+  }
+
+  .follow p {
+    margin-top: 20px;
+  }
+}
+@media (max-width: 500px) {
+  .contacts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .input {
+    width: 240px;
+  }
+  .about_comp p {
+    font-size: 24px;
+  }
+
+  .label p {
+    width: 240px;
+    font-size: 18px;
+  }
+
+  .input input {
+    width: 240px;
+  }
+}

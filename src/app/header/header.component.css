@@ -1,0 +1,113 @@
+.header {
+  width: 100%;
+  height: 54px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+
+.logo:hover {
+  cursor: pointer;
+}
+
+.nav_container {
+  display: flex;
+  gap: 74px;
+  align-items: center;
+}
+
+.nav_drawer_container{
+  margin-bottom: 20px;
+  text-align: center;
+  display: flex;
+  gap: 15px;
+  align-items:center;
+  flex-direction: column;
+}
+nav {
+  display: flex;
+  gap: 74px;
+}
+
+.drawer_nav {
+  flex-direction: column;
+  z-index: 10;
+}
+
+.burger {
+  display: none;
+}
+
+nav a {
+  color: #333;
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+nav a:hover {
+  border-bottom: 1px solid black;
+}
+
+
+.Contact_as, .Contact_as_nav {
+  display: inline-flex;
+  padding: 14px 32px;
+  align-items: flex-start;
+  gap: 10px;
+  border: 1px solid var(--grayscale-30, #3c3c3c);
+  background: var(--primary-blue-100, #2c3878);
+
+  color: var(--grayscale-white, #fff);
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  user-select: none;
+}
+
+.Contact_as:hover {
+  cursor: pointer;
+}
+
+.Contact_as_nav {
+  padding: 14px 100px;
+}
+
+@media only screen and (max-width: 900px) {
+  .nav_container {
+    gap: 30px;
+  }
+  nav {
+    gap: 30px;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  .nav_container {
+    display: none;
+  }
+
+  .burger {
+    display: block;
+    width: 30px;
+  }
+}
+
+.drawer {
+  position: absolute;
+  width: 100%;
+  padding: 30px 0;
+  background-color: white;
+}
+#our_teams {
+  font-weight: 600;
+  font-feature-settings: 'clig' off, 'liga' off;
+  font-family: Poppins;
+}
