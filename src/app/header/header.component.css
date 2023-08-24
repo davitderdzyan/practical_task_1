@@ -6,8 +6,6 @@
   align-items: center;
 }
 
-
-
 .logo:hover {
   cursor: pointer;
 }
@@ -106,6 +104,7 @@ nav a:hover {
   padding: 30px 0;
   background-color: white;
 }
+
 #our_teams {
   font-weight: 600;
   font-feature-settings: 'clig' off, 'liga' off;

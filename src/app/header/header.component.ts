@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent {
-  isDrawerOpen: boolean = false;
+  public isDrawerOpen: boolean = false;
 
   toggleDrawer() : void{
     this.isDrawerOpen = !this.isDrawerOpen;
